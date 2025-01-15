@@ -12,5 +12,5 @@ permalink: /about/
 이메일: csw2103@naver.com
 
 ## Theme Monos
-> Simple and lightweight theme for Jekyll
+> Simple and lightweight theme for Jekyll  
 > 테마는 Monos를 사용하며 jekyll을 기반으로 제작되었습니다.
