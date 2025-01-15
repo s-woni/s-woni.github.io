@@ -4,30 +4,12 @@ title: About
 permalink: /about/
 ---
 
+이 블로그는 **프로그래밍**에 대한 TIL을 작성하기 위해 만들어졌습니다.
+
+### 작성자 소개
+이름: 최성원
+관심 분야: 풀스택 개발, 오픈 소스 프로젝트  
+이메일: csw2103@naver.com
+
 ## Theme Monos
 > Simple and lightweight theme for Jekyll
-
-### Features
-- Responsive.
-- Syntax Highlight
-- Most optimized theme for tech blog.
-- Lightweight with minimum stylesheet.
-- Easy to customize.
-- Offers category menu.
-
-### _config.yml
-> Code block will look like this.
-```yml
-highlighter-theme: monokai //you can change your syntax color scheme.
-date_format: "%Y-%M-%D" //and date format.
-```
-
-### Screenshots
-#### Page
-![alt text](/public/img/screenshot-1.png)
-#### Articles
-![alt text](/public/img/screenshot-2.png)
-#### Page - Mobile
-![alt text](/public/img/screenshot-m1.png)
-#### Page - Articles
-![alt text](/public/img/screenshot-m2.png)
