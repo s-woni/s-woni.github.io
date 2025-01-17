@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
   
         // 클립보드에 텍스트 복사
         navigator.clipboard.writeText(text).then(function() {
-          // 복사 성공 후 메시지 표시
+          // 기존에 복사 메시지가 존재하는지 확인
           let copyMsg = codeBlock.parentElement.querySelector('.copy-msg');
           
-          // 기존의 "Copied!" 메시지가 있다면 제거
+          // 기존 메시지가 있으면 제거
           if (copyMsg) {
             copyMsg.remove();
           }
-
+  
           // 새로운 "Copied!" 메시지 생성
           const newCopyMsg = document.createElement('div');
           newCopyMsg.textContent = 'Copied!';
