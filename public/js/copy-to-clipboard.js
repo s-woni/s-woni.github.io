@@ -14,28 +14,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // 클립보드에 텍스트 복사
         navigator.clipboard.writeText(text).then(function() {
           // 복사 성공 후 메시지 표시
-          const copyMsg = codeBlock.parentElement.querySelector('.copy-msg');
-          if (!copyMsg) {
-            const newCopyMsg = document.createElement('div');
-            newCopyMsg.textContent = 'Copied!';
-            newCopyMsg.classList.add('copy-msg');
-            codeBlock.parentElement.appendChild(newCopyMsg);
-  
-            // 메시지 표시
-            setTimeout(function() {
-              newCopyMsg.classList.add('show');
-            }, 10); // 빠르게 보여주기 위해서
-            setTimeout(function() {
-              newCopyMsg.classList.remove('show'); // 사라지게
-            }, 2000); // 2초 후 사라짐
-          } else {
-            // 이미 존재하는 메시지 업데이트
-            copyMsg.textContent = 'Copied!';
-            copyMsg.classList.add('show');
-            setTimeout(function() {
-              copyMsg.classList.remove('show'); // 사라지게
-            }, 2000); // 2초 후 사라짐
+          let copyMsg = codeBlock.parentElement.querySelector('.copy-msg');
+          
+          // 기존의 "Copied!" 메시지가 있다면 제거
+          if (copyMsg) {
+            copyMsg.remove();
           }
+
+          // 새로운 "Copied!" 메시지 생성
+          const newCopyMsg = document.createElement('div');
+          newCopyMsg.textContent = 'Copied!';
+          newCopyMsg.classList.add('copy-msg');
+          codeBlock.parentElement.appendChild(newCopyMsg);
+  
+          // 메시지 표시
+          setTimeout(function() {
+            newCopyMsg.classList.add('show');
+          }, 10); // 빠르게 보여주기 위해서
+
+          // 2초 후 메시지 숨김
+          setTimeout(function() {
+            newCopyMsg.classList.remove('show'); // 사라지게
+          }, 2000); // 2초 후 사라짐
   
           // 버튼 색상 변경
           copyButton.classList.add('copied');
