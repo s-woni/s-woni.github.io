@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
               newCopyMsg.classList.remove('show'); // 사라지게
             }, 2000); // 2초 후 사라짐
+          } else {
+            // 이미 존재하는 메시지 업데이트
+            copyMsg.textContent = 'Copied!';
+            copyMsg.classList.add('show');
+            setTimeout(function() {
+              copyMsg.classList.remove('show'); // 사라지게
+            }, 2000); // 2초 후 사라짐
           }
   
           // 버튼 색상 변경
