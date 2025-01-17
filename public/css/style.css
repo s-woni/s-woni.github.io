@@ -357,3 +357,21 @@ th {
 tr:nth-child(even) {
 	background-color: #f9f9f9;
 }
+
+.copy-button {
+	background-color: #4CAF50; /* 버튼 색상 */
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-left: 10px;
+}
+  
+.copy-button:hover {
+	background-color: #45a049;
+}
+  
+.copy-button:focus {
+	outline: none;
+}
