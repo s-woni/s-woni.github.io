@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
               newCopyMsg.classList.remove('show'); // 사라지게
             }, 2000); // 2초 후 사라짐
           }
+  
+          // 버튼 색상 변경
+          copyButton.classList.add('copied');
+          setTimeout(function() {
+            copyButton.classList.remove('copied'); // 원래 상태로 돌아가게 함
+          }, 2000); // 2초 후 버튼 색상 원상복구
         }).catch(function() {
           alert('Failed to copy text');
         });
@@ -38,5 +44,4 @@ document.addEventListener('DOMContentLoaded', function() {
       codeBlock.parentElement.style.position = 'relative';
       codeBlock.parentElement.appendChild(copyButton);
     });
-  });
-  
+});
