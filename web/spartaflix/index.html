@@ -93,6 +93,13 @@
             $('#postingbox').toggle();
         }
 
+        let url = "http://spartacodingclub.shop/sparta_api/weather/seoul";
+        fetch(url).then(res => res.json()).then(data => {
+            let temp = data['temp'];
+
+            $('#msg').text(temp);
+        })
+
         function makecard() {
             let image = $('#image').val();
             let title = $('#title').val();
@@ -133,6 +140,7 @@
                     <li><a href="#" class="nav-link px-2 text-white">시리즈</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">영화</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">내가 찜한 콘텐츠</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">오늘 서울의 온도 : <span id="msg">20.00도</span></a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
