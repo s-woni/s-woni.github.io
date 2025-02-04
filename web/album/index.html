@@ -18,8 +18,9 @@
         body {
             margin: 0;
             padding: 0;
-            overflow-x: scroll;
-            overflow-y: hidden;
+            overflow: scroll;
+            /* overflow-x: scroll; */
+            /* overflow-y: hidden; */
             width: 100%;
             height: 100%;
             box-sizing: border-box;
@@ -89,6 +90,12 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+        let url = "http://spartacodingclub.shop/sparta_api/seoulair";
+        fetch(url).then(res => res.json()).then(data => {
+            let mise = data['RealtimeCityAir']['row'][0]['IDEX_NM'];
+            
+        })
+
         function openclose() {
             $('#postingbox').toggle();
         }
