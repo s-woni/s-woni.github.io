@@ -12,26 +12,16 @@
 
         * {
             font-family: "Black And White Picture", serif;
-            box-sizing: border-box;
         }
 
-        /* index.html의 스타일 */
-body {
+        body {
   margin: 0;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100vw; /* 부모 요소의 너비를 넘지 않도록 */
+  padding: 0;
+  overflow-x: scroll; /* 좌우 스크롤 허용 */
+  overflow-y: hidden; /* 상하 스크롤 방지 */
+  width: 100%;  /* 콘텐츠가 부모 크기에 맞게 100% 조정 */
+  height: 100%; /* 화면 크기에 맞게 */
   box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
         .mytitle {
