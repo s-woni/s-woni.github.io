@@ -12,32 +12,27 @@
 
         * {
             font-family: "Black And White Picture", serif;
-        }
-
-        body {
-            margin: 0;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
             box-sizing: border-box;
         }
 
-        html, body {
-            height: 100%;
-        }
+        /* index.html의 스타일 */
+body {
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw; /* 부모 요소의 너비를 넘지 않도록 */
+  box-sizing: border-box;
+}
 
-        .container {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-        }
+html, body {
+  height: 100%;
+}
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
         .mytitle {
             height: 250px;
