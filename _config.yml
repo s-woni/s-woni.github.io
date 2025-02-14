@@ -53,6 +53,8 @@ menu:
     submenu:
       - title:         Pre-Camp
         url:           /pre-camp/
+      - title:         Main-Camp
+        url:           /main-camp/
   - title:             Study
     url:               /study/
     submenu:
