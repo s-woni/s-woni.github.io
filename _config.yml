@@ -64,6 +64,11 @@ menu:
         url:           /java/
       - title:         Web
         url:           /web/
+  - title:             Project
+    url:               /project/
+    submenu:
+      - title:         Mini-Project
+        url:           /mini-project/
   - title:             About
     url:               /about/
 
