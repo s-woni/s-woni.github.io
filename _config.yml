@@ -64,6 +64,8 @@ menu:
         url:           /java/
       - title:         Web
         url:           /web/
+      - title:         Coding
+        url:           /coding/
   - title:             Project
     url:               /project/
     submenu:
