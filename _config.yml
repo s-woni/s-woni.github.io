@@ -55,6 +55,8 @@ menu:
         url:           /pre-camp/
       - title:         Main-Camp
         url:           /main-camp/
+      - title:         KPT
+        url:           /kpt/
   - title:             Study
     url:               /study/
     submenu:
