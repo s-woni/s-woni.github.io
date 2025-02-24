@@ -51,10 +51,10 @@ menu:
   - title:             TIL
     url:               /til/
     submenu:
-      - title:         Pre-Camp
-        url:           /pre-camp/
       - title:         Main-Camp
         url:           /main-camp/
+      - title:         Pre-Camp
+        url:           /pre-camp/
       - title:         KPT
         url:           /kpt/
   - title:             Study
